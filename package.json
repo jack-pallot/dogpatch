@@ -1,0 +1,36 @@
+{
+  "name": "Dogpatch",
+  "version": "1.0.0",
+  "description": "A WordPress starter theme including Webpack (via Laravel Mix), Vue, Babel and Tailwind CSS.",
+  "author": {
+    "name": "Jack Pallot",
+    "url": "https://github.com/jack-pallot"
+  },
+  "license": "GNU General Public License v3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jack-pallot/dogpatch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jack-pallot/dogpatch/issues"
+  },
+  "homepage": "https://github.com/jack-pallot/dogpatch",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "glob-all": "^3.1.0",
+    "laravel-mix": "^2.1.11",
+    "purgecss-webpack-plugin": "^1.2.0",
+    "tailwindcss": "^0.6.4"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue": "^2.5.17"
+  }
+}
