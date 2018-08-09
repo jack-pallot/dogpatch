@@ -20,6 +20,7 @@
 * Support for Sass
 * ITCSS directory structure for your Sass files
 * Zero setup Tailwind CSS framework support
+* Accessibility utilities for Tailwind CSS
 * Purge CSS to eliminate dead code (HTML, PHP, JS and Vue files)
 
 ## WordPress

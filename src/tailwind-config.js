@@ -912,6 +912,24 @@ module.exports = {
 
   /*
   |-----------------------------------------------------------------------------
+  | Plugins                                https://tailwindcss.com/docs/plugins
+  |-----------------------------------------------------------------------------
+  |
+  | Here is where you can register any plugins you'd like to use in your
+  | project. Tailwind's built-in `container` plugin is enabled by default to
+  | give you a Bootstrap-style responsive container component out of the box.
+  |
+  | Be sure to view the complete plugin documentation to learn more about how
+  | the plugin system works.
+  |
+  */
+
+  plugins: [
+    require('tailwindcss-accessibility')
+  ],
+
+  /*
+  |-----------------------------------------------------------------------------
   | Advanced Options         https://tailwindcss.com/docs/configuration#options
   |-----------------------------------------------------------------------------
   |
