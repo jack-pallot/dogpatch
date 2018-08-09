@@ -35,16 +35,21 @@
 ### Installing
 Download the ZIP or clone the repository into your WordPress themes directory.
 
-`$ cd` into the theme directory.
+`$ cd` into the Dogpatch theme directory.
 
 **Install the project dependencies using NPM or Yarn:**
 
 <pre><code>npm install</code></pre>
 <pre><code>yarn install</code></pre>
 
-Amend the webpack.mix.js file with your settings.
+ - Amend the webpack.mix.js file with your settings.
+ - Amend the src/tailwind.config.js file with your custom CSS classes.
 
-Amend the src/tailwind.config.js file with your custom CSS classes.
+⚠️ You will likely want to remove any references of Dogpatch and replace them with your current project name instead. ⚠️
+
+* Rename the theme folder
+* Amend the settings in style.css
+* Adjust the screenshots to your design
 
 ### Development
 
