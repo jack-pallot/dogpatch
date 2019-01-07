@@ -12,6 +12,7 @@
   // require_once('functions/core/remove-json-api-scripts.php');
   // require_once('functions/core/remove-wp-xml-scripts.php');
   // require_once('functions/core/remove-default-editor.php');
+  // require_once('functions/core/remove-gutenberg-styles.php');
 
 /* ==========================================================================
     Template
@@ -23,6 +24,7 @@
   // require_once('functions/template/slugify.php');
   // require_once('functions/template/check-if-ajax.php');
   // require_once('functions/template/get-file-type.php');
+  // require_once('functions/template/pretty-print.php');
 
 /* ==========================================================================
     Plugin

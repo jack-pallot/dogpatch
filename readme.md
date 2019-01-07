@@ -86,8 +86,16 @@ Download the ZIP or clone the repository into your WordPress themes directory.
 ----------
 
 ## Updating
-**Updates and instructions will be displayed here.**
 
+ **0.0.2**
+ Two new functions added:
+
+ remove-gutenberg-styles.php - removes Gutenberg block editor styles
+ pretty-print.php - nicer formatting on nested print statements with print_p()
+
+ Copy new files from /functions/core and /functions/template and copy functions.php. Comment out as needed.
+
+----------
 No auto-updates through WordPress or child themes. These methods tend to cause behind the scenes conflicts and often cause more problems than they solve. Instead you can choose to patch the areas manually if you wish to do so, however, the benefit of being clean-slate means that updates should only require only minor changes.
 
 ----------
