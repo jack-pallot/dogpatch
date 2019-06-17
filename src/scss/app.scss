@@ -2,7 +2,7 @@
    Generic
     - Low-specificity, far-reaching rulesets like CSS resets
   ========================================================================== */
-  @import "/generic/generic.reset.scss";
+  @import "./generic/generic.reset.scss";
 
 /* ==========================================================================
    Elements
@@ -18,10 +18,10 @@
    Components
     - Components and widgets
   ========================================================================== */
-  @import "/components/components.tw.scss";
+  @import "./components/components.tw.scss";
 
 /* ==========================================================================
    Utilities
     - Helper classes and overrides
   ========================================================================== */
-  @import "/utils/utils.all.scss";
+  @import "./utils/utils.all.scss";

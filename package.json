@@ -25,12 +25,16 @@
     "browser-sync": "^2.24.6",
     "browser-sync-webpack-plugin": "^2.2.2",
     "glob-all": "^3.1.0",
-    "laravel-mix": "^2.1.11",
+    "laravel-mix": "^4.0.13",
     "purgecss-webpack-plugin": "^1.2.0",
-    "tailwindcss": "^0.6.4"
+    "sass": "^1.15.3",
+    "sass-loader": "7.*",
+    "tailwindcss": "^0.6.4",
+    "vue-template-compiler": "^2.5.21"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "js-yaml": "^3.13.1",
     "tailwindcss-accessibility": "^1.0.0",
     "vue": "^2.5.17"
   }

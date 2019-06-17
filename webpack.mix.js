@@ -16,8 +16,8 @@ const PurgecssPlugin = require('purgecss-webpack-plugin')
     filesToWatch: [
       './**/*.php',
       './**/*.html',
-      'src/scss/**/*.scss',
-      'src/js/**/*.js',
+      'dist/css/*.css',
+      'dist/js/*.js',
       'src/img/*',
       'src/js/components/**/*.vue',
       'src/tailwind-config.js',
@@ -66,6 +66,8 @@ mix
     host: config.siteUrl,
     open: config.openOnStart,
     port: config.port,
+    injectChanges: true,
+    files: config.filesToWatch,
     https: {
       key: config.pathToLocalSSLKey,
       cert: config.pathToLocalSSLCert
@@ -76,8 +78,8 @@ mix
 // remove unused CSS from files - only used when running npm run production
 if (mix.inProduction()) {
   mix.options({
-    uglify: {
-      uglifyOptions: {
+    terser: {
+      terserOptions: {
         mangle: true,
 
         compress: {
