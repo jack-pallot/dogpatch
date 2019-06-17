@@ -30,7 +30,9 @@
     "tailwindcss": "^0.6.4"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
+    "fstream": "^1.0.12",
+    "js-yaml": "^3.13.1",
     "tailwindcss-accessibility": "^1.0.0",
     "vue": "^2.5.17"
   }
