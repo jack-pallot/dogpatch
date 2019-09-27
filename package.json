@@ -35,7 +35,6 @@
   "dependencies": {
     "axios": "^0.19.0",
     "js-yaml": "^3.13.1",
-    "tailwindcss-accessibility": "^1.0.0",
     "vue": "^2.6.10"
   }
 }
