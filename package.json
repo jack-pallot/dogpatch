@@ -29,7 +29,7 @@
     "purgecss-webpack-plugin": "^1.6.0",
     "sass": "^1.22.12",
     "sass-loader": "8.0.0",
-    "tailwindcss": "^0.6.4",
+    "tailwindcss": "^1.1.2",
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {

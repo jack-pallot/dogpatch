@@ -6,32 +6,32 @@ const PurgecssPlugin = require('purgecss-webpack-plugin')
 /* ==========================================================================
   Config
   ========================================================================== */
-  const config = {
-    siteUrl: 'dogpatchdev.test',
-    proxyUrl: 'https://dogpatchdev.test',
-    port: 3000,
-    openOnStart: false,
-    pathToLocalSSLCert: '',
-    pathToLocalSSLKey: '',
-    filesToWatch: [
-      './**/*.php',
-      './**/*.html',
-      'dist/css/*.css',
-      'dist/js/*.js',
-      'src/img/*',
-      'src/js/components/**/*.vue',
-      'src/tailwind-config.js',
-    ]
-  }
+const config = {
+  siteUrl: 'dogpatchdev.test',
+  proxyUrl: 'https://dogpatchdev.test',
+  port: 3000,
+  openOnStart: false,
+  pathToLocalSSLCert: '',
+  pathToLocalSSLKey: '',
+  filesToWatch: [
+    './**/*.php',
+    './**/*.html',
+    'dist/css/*.css',
+    'dist/js/*.js',
+    'src/img/*',
+    'src/js/components/**/*.vue',
+    'src/tailwind-config.js',
+  ],
+}
 
 /* ==========================================================================
   Purge CSS Extractors
   ========================================================================== */
-  class TailwindExtractor {
-    static extract(content) {
-      return content.match(/[A-z0-9-:\/]+/g) || []
-    }
+class TailwindExtractor {
+  static extract(content) {
+    return content.match(/[A-z0-9-:\/]+/g) || []
   }
+}
 
 /* ==========================================================================
   Laravel Mix Config
@@ -47,11 +47,6 @@ mix
   .options({
     processCssUrls: false,
     postCss: [tailwindcss('src/tailwind-config.js')],
-    autoprefixer: {
-      options: {
-        browsers: ['last 10 versions'],
-      },
-    },
   })
 
   // Move images to dist directory
@@ -70,9 +65,9 @@ mix
     files: config.filesToWatch,
     https: {
       key: config.pathToLocalSSLKey,
-      cert: config.pathToLocalSSLCert
+      cert: config.pathToLocalSSLCert,
     },
-    files: config.filesToWatch
+    files: config.filesToWatch,
   })
 
 // remove unused CSS from files - only used when running npm run production
